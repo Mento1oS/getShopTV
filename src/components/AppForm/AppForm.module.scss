@@ -1,0 +1,120 @@
+.AppForm {
+
+}
+
+.header {
+  font-weight: 700;
+  font-size: var(--h1-bold-font-size);
+  letter-spacing: var(--h1-bold-letter-spacing);
+  line-height: var(--h1-bold-line-height);
+  margin-bottom: 64px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 40px
+}
+
+.textarea {
+  flex: 1 1 0;
+  padding: 14px 18px;
+  border: 1px solid var(--gray-1);
+  border-radius: 12px;
+  outline: none;
+  background: none;
+  font-size: var(--body-text-2-font-size);
+  line-height: var(--body-text-2-line-height);
+  letter-spacing: var(--body-text-2-letter-spacing);
+  &:focus{
+    border: 1px solid var(--black);
+  }
+  &::placeholder{
+    color: var(--black);
+  }
+}
+
+.rightCol {
+  flex: 1 1 0;
+}
+
+.input{
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px 1px 18px 1px;
+  outline: none;
+  border-bottom: 1px solid var(--gray-1);
+  &:focus{
+    border-bottom: 1px solid var(--black);
+  }
+  font-size: var(--body-text-2-font-size);
+  line-height: var(--body-text-2-line-height);
+  letter-spacing: var(--body-text-2-letter-spacing);
+  &::placeholder{
+    color: var(--black);
+  }
+  margin-bottom: 32px;
+}
+
+.checkboxFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkbox{
+  margin-top: 3.8px;
+  background: none;
+  outline: none;
+}
+
+.checkboxText{
+  font-size: var(--body-text-3-font-size);
+  line-height: var(--body-text-3-line-height);
+  letter-spacing: var(--body-text-3-letter-spacing);
+}
+.underline{
+  text-decoration: underline;
+  color: var(--black);
+  cursor: pointer;
+}
+.button{
+  margin-top: 48px;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+  background: var(--black);
+  font-size: var(--btn-font-size);
+  line-height: var(--btn-line-height);
+  letter-spacing: var(--btn-letter-spacing);
+  outline: none;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  &:hover{
+    background-color: var(--gray-1);
+  }
+  cursor: pointer;
+}
+.error{
+  border-bottom: 1px solid var(--error);
+  margin-bottom: 0;
+  &:focus{
+    border-bottom: 1px solid var(--error);
+  }
+}
+.errorText{
+  padding-top: 5px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+  color: var(--error);
+  padding-left: 1px;
+  margin-bottom: 14px;
+}

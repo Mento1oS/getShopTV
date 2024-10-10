@@ -1,0 +1,72 @@
+.LandingComponent{
+  margin-top: 39px;
+  width: 100%;
+  background: url("../../assets/shapes.png") center center no-repeat;
+  padding-bottom: 70px;
+  background-size: cover;
+}
+
+.container{
+  padding-top: 134px;
+  margin: 0 auto;
+  max-width: var(--container-width);
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.header{
+  font-size: var(--h0-font-size);
+  letter-spacing: var(--h0-letter-spacing);
+  line-height: var(--h0-line-height);
+  font-weight: 700;
+  text-align: left;
+}
+.subhead{
+  margin-top: 32px;
+  font-size: var(--h2-regular-font-size);
+  letter-spacing: var(--h2-regular-letter-spacing);
+  line-height: var(--h2-regular-line-height);
+  font-weight: 400;
+  text-align: left;
+  max-width: 626px;
+}
+.button{
+  margin-top: 80px;
+  background: var(--orange);
+  color: var(--white);
+  font-size: var(--btn-font-size);
+  line-height: var(--btn-line-height);
+  letter-spacing: var(--btn-letter-spacing);
+  outline: none;
+  border: none;
+  padding: 12px 40px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover{
+    background: var(--dark-orange);
+  }
+  &:active{
+    color: var(--gray-1);
+    background: var(--gray-2);
+  }
+}
+.additional{
+  margin-top: 183px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.additionalHeader{
+  flex: 1 1 0;
+  max-width: 480px;
+  font-size: var(--h1-bold-font-size);
+  letter-spacing: var(--h1-bold-letter-spacing);
+  line-height: var(--h1-bold-line-height);
+  font-weight: 700;
+}
+
+.switch{
+  flex: 1 1 0;
+  max-width: 560px;
+}

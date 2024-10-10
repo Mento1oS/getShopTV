@@ -1,0 +1,69 @@
+.ReviewsComponent {
+  padding-top: 74px;
+  width: 100%;
+  background: url("../../assets/notebook.svg") center right no-repeat var(--gray-4);
+  padding-bottom: 54px;
+}
+
+.container {
+  padding: 42px 30px;
+  margin: 0 auto;
+  max-width: var(--container-width);
+  width: 100%;
+}
+
+.wrapper{
+  max-width: 500px;
+}
+
+.header {
+  margin-bottom: 32px;
+  font-size: var(--h1-bold-font-size);
+  letter-spacing: var(--h1-bold-letter-spacing);
+  line-height: var(--h1-bold-line-height);
+  font-weight: 700;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.block {
+  display: flex;
+  gap: 16px;
+  &:nth-child(3){
+    div{
+      max-width: 420px;
+    }
+  }
+  align-items: flex-start;
+}
+
+.picture {
+}
+.text{
+  max-width: 450px;
+  font-size: var(--body-text-1-font-size);
+  line-height: var(--body-text-1-line-height);
+  letter-spacing: var(--body-text-1-letter-spacing);
+  font-weight: 400;
+}
+.button{
+  background: var(--black);
+  color: var(--white);
+  font-size: var(--btn-font-size);
+  line-height: var(--btn-line-height);
+  letter-spacing: var(--btn-letter-spacing);
+  outline: none;
+  border: none;
+  padding: 12px 49px;
+  text-align: center;
+  border-radius: 10px;
+  &:hover{
+    background-color: var(--gray-1);
+  }
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.PartnersComponent{
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 106px;
+}
+.flex{
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  max-width: var(--container-width);
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.header{
+  font-size: var(--h2-bold-font-size);
+  letter-spacing: var(--h2-bold-letter-spacing);
+  line-height: var(--h2-bold-line-height);
+  font-weight: 700;
+  min-width: 400px;
+}
+.clickWave{
+}
+.zyphronix{
+}
+.novaSphere{
+  padding-right: 46px;
+}

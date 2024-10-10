@@ -1,0 +1,68 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --gray-1: rgb(164, 173, 172);
+  --gray-2: rgb(214, 219, 219);
+  --gray-3: rgb(232, 237, 238);
+  --gray-4: rgb(242, 246, 246);
+  --black: rgb(29, 29, 27);
+  --orange: rgb(255, 89, 0);
+  --dark-orange: rgb(224, 87, 14);
+  --error: rgb(255, 64, 38);
+
+  --h2-bold-font-size: 22px;
+  --h2-bold-line-height: 32px;
+  --h2-bold-letter-spacing: 0%;
+
+  --h1-bold-font-size: 32px;
+  --h1-bold-line-height: 120%;
+  --h1-bold-letter-spacing: 0%;
+
+  --body-text-1-font-size: 22px;
+  --body-text-1-line-height: 32px;
+  --body-text-1-letter-spacing: 0%;
+
+  --h2-regular-font-size: 24px;
+  --h2-regular-line-height: 32px;
+  --h2-regular-letter-spacing: 0%;
+
+  --h0-font-size: 80px;
+  --h0-line-height: 110%;
+  --h0-letter-spacing: -4%;
+
+  --btn-font-size: 14px;
+  --btn-line-height: 24px;
+  --btn-letter-spacing: 0.5px;
+
+  --body-text-2-font-size: 18px;
+  --body-text-2-line-height: 22px;
+  --body-text-2-letter-spacing: 0%;
+
+  --body-text-3-font-size: 14px;
+  --body-text-3-line-height: 20px;
+  --body-text-3-letter-spacing: 0%;
+
+  --container-width: 1220px
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background:  var(--gray-3);
+}
+*{
+  font-family: var(--font-onest);
+}
+
+@media (max-width:500px) {
+  :root {
+    --body-text-1-font-size:10px;
+  }
+}
