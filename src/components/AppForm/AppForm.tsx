@@ -2,6 +2,7 @@
 import cls from './AppForm.module.scss'
 import Link from "next/link";
 import {useState} from "react";
+import {Checkbox} from "@mui/material";
 
 interface AppFormProps {
     className?: string;
@@ -14,9 +15,9 @@ export const AppForm = ({}: AppFormProps) => {
     const [question, setQuestion] = useState('');
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(!email.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+        if (!email.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
             setIsError(true);
-        }else{
+        } else {
             setIsError(false);
         }
     }
@@ -41,9 +42,19 @@ export const AppForm = ({}: AppFormProps) => {
                         </div>
                     }
                     <div className={cls.checkboxFlex}>
-                        <input onChange={(e) => {
+                        <Checkbox size='small' sx={{
+                            bgColor: 'none',
+                            color: 'rgb(164, 173, 172)',
+                            borderRadius: '4px',
+                            width:'14px',
+                            height:'14px',
+                            '&.Mui-checked': {
+                                color: 'rgb(255, 89, 0)',
+                                bgColor: 'rgb(255, 255, 255)',
+                            }
+                        }} onChange={(e) => {
                             setIsAgree(e.target.checked);
-                        }} checked={isAgree} className={cls.checkbox} type="checkbox"/>
+                        }} checked={isAgree} className={cls.checkbox}/>
                         <div className={cls.checkboxText}>
                             Я ознакомлен(а) с{' '}
                             <Link
@@ -60,7 +71,8 @@ export const AppForm = ({}: AppFormProps) => {
                             </Link>
                         </div>
                     </div>
-                    <button disabled={!(isAgree && email.length)} onClick={handleSubmit} className={cls.button}>Отправить
+                    <button disabled={!(isAgree && email.length)} onClick={handleSubmit}
+                            className={cls.button}>Отправить
                     </button>
                 </div>
             </div>
