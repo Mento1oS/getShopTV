@@ -4,9 +4,19 @@
   position: fixed;
   background: none;
   z-index: 50;
-  height: 65px;
   width: 100%;
-  min-height: 84px;
+  height: 100vh;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.container {
+  margin-top: -31px;
+  padding-top: 31px;
+  width: 100%;
+  min-height: 65px;
 }
 
 .flex {
@@ -16,13 +26,12 @@
   max-width: var(--container-width);
   width: 100%;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 30px 16px 30px;
 }
 
 .logoLink {
   border-radius: 10px;
   background: rgb(255, 255, 255);
-  margin-bottom: 16px;
   outline: none;
   border: none;
   padding: 1px 47px;
@@ -60,18 +69,69 @@
 
 .burger {
   display: none;
+  padding: 11px 11px;
+  border: 2px solid  var(--orange);
+  border-radius: 10px;
+}
+
+.burgerLine {
+  width: 21.52px;
+  height: 2px;
+  background-color: var(--orange);
+  border-radius: 1px;
+  &.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(5.5px,5.5px);
+    transition: ease-out 0.5s;
+  }
+  &.clicked:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+  }
+  &.clicked:nth-child(3) {
+    transform: rotate(-45deg) translate(5.5px,-5.5px);
+    transition: ease-out 0.5s;
+  }
+
+  &.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 283px;
+  z-index: -1;
+  height: 100vh;
+  background-color: var(--white);
+  top: 0;
+  overflow-y: hidden;
 }
 
 .dropShadow {
   box-shadow: 0 5px 5px 0 rgba(164, 173, 172, 0.25);
   backdrop-filter: blur(5px);
   background: rgba(232, 237, 238, 0.75);
-  //background-color: var(--gray-3);
 }
 
 .isInViewPort {
-  a{
+  a {
     color: var(--orange);
   }
+}
 
+@media (max-width: 1160px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .menu{
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
 }

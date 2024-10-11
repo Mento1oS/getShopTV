@@ -1,3 +1,34 @@
 .Menu{
+  height: 100%;
+}
+.flex{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: var(--btn-font-size);
+  line-height: var(--btn-line-height);
+  letter-spacing: var(--btn-letter-spacing);
 
+  a {
+    color: var(--black);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--orange);
+    }
+
+    &:active {
+      color: var(--orange);
+      text-decoration: underline;
+    }
+  }
+}
+
+.isInViewPort {
+  a {
+    color: var(--orange);
+  }
 }
