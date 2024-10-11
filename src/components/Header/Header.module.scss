@@ -1,4 +1,4 @@
-.Header{
+.Header {
   margin-top: -31px;
   padding-top: 31px;
   position: fixed;
@@ -9,7 +9,7 @@
   min-height: 84px;
 }
 
-.flex{
+.flex {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -19,12 +19,12 @@
   padding: 0 30px;
 }
 
-.logoLink{
+.logoLink {
   border-radius: 10px;
   background: rgb(255, 255, 255);
   margin-bottom: 16px;
   outline: none;
-  border:none;
+  border: none;
   padding: 1px 47px;
   color: var(--black);
   font-size: 21.49px;
@@ -35,30 +35,43 @@
   cursor: pointer;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: flex-end;
   gap: 64px;
   font-size: var(--btn-font-size);
   line-height: var(--btn-line-height);
   letter-spacing: var(--btn-letter-spacing);
-  a{
-    color:var(--black);
+
+  a {
+    color: var(--black);
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       color: var(--orange);
     }
-    &:active{
+
+    &:active {
       color: var(--orange);
       text-decoration: underline;
     }
   }
 }
-.burger{
+
+.burger {
   display: none;
 }
 
-.dropShadow{
-  box-shadow: 0px 5px 5px 0px rgba(164, 173, 172, 0.25);
-  background-color: var(--gray-3);
+.dropShadow {
+  box-shadow: 0 5px 5px 0 rgba(164, 173, 172, 0.25);
+  backdrop-filter: blur(5px);
+  background: rgba(232, 237, 238, 0.75);
+  //background-color: var(--gray-3);
+}
+
+.isInViewPort {
+  a{
+    color: var(--orange);
+  }
+
 }

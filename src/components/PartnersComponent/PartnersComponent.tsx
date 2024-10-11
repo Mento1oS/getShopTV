@@ -17,19 +17,19 @@ export const PartnersComponent = ({}: PartnersComponentProps) => {
                 <Image className={cls.clickWave}
                     height={55}
                     width={177}
-                    src={clickWave as string}
+                    src={clickWave as unknown as string}
                     alt={'clickWave'}
                 />
                 <Image className={cls.zyphronix}
                     height={71}
                     width={102}
-                    src={zyphronix as string}
+                    src={zyphronix as unknown as string}
                     alt={'zyphronix'}
                 />
                 <Image className={cls.novaSphere}
                     height={45}
                     width={175}
-                    src={novaSphere as string}
+                    src={novaSphere as unknown as string}
                     alt={'novaSphere'}
                 />
             </div>

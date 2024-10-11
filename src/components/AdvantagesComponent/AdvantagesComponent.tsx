@@ -16,7 +16,7 @@ export const AdvantagesComponent = ({}: AdvantagesComponentProps) => {
                 <div className={cls.advantages}>
                     <div className={cls.advantage}>
                         <Image className={cls.picture}
-                            src={arrow as string}
+                            src={arrow as unknown as string}
                             width={32}
                             height={32}
                             alt={'Булит'}/>
@@ -31,7 +31,7 @@ export const AdvantagesComponent = ({}: AdvantagesComponentProps) => {
                         <svg width="573" height="120" viewBox="0 0 573 120" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <rect x="227" width="120" height="120" rx="17.9739" fill="#FF5900"/>
-                            <g clip-path="url(#clip0_0_1)">
+                            <g clipPath="url(#clip0_0_1)">
                                 <path
                                     d="M317.219 32.4042C317.866 33.7735 318.255 35.3201 318.255 37.0116V83.9883C318.255 85.6638 317.866 87.2103 317.219 88.5797C322.223 89.4174 327 85.4543 327 79.993V40.9908C327 35.4973 322.206 31.5664 317.219 32.4042Z"
                                     fill="white"/>
@@ -63,7 +63,7 @@ export const AdvantagesComponent = ({}: AdvantagesComponentProps) => {
                     </div>
                     <div className={cls.advantage}>
                         <Image className={cls.picture}
-                            src={arrow as string}
+                            src={arrow as unknown as string}
                             width={32}
                             height={32}
                             alt={'Булит'}/>

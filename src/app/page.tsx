@@ -5,6 +5,7 @@ import {AdvantagesComponent} from "@/components/AdvantagesComponent/AdvantagesCo
 import {PartnersComponent} from "@/components/PartnersComponent/PartnersComponent";
 import {ReviewsComponent} from "@/components/ReviewsComponent/ReviewsComponent";
 import {FormComponent} from "@/components/FormComponent/FormComponent";
+import {useRef} from "react";
 
 export default function Home() {
     return (

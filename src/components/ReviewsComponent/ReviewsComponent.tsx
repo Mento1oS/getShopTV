@@ -18,7 +18,7 @@ export const ReviewsComponent = ({}: ReviewsComponentProps) => {
                         <div className={cls.block}>
                             <Image
                                 className={cls.picture}
-                                src={arrow as string}
+                                src={arrow as unknown as string}
                                 width={32}
                                 height={32}
                                 alt={'Булит'}
@@ -30,7 +30,7 @@ export const ReviewsComponent = ({}: ReviewsComponentProps) => {
                         <div className={cls.block}>
                             <Image
                                 className={cls.picture}
-                                src={arrow as string}
+                                src={arrow as unknown as string}
                                 width={32}
                                 height={32}
                                 alt={'Булит'}
@@ -42,7 +42,7 @@ export const ReviewsComponent = ({}: ReviewsComponentProps) => {
                         <div className={cls.block}>
                             <Image
                                 className={cls.picture}
-                                src={arrow as string}
+                                src={arrow as unknown as string}
                                 width={32}
                                 height={32}
                                 alt={'Булит'}

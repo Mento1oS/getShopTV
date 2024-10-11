@@ -9,8 +9,8 @@ export const LandingComponent = ({}: LandingComponentProps) => {
     return (
         <div className={cls.LandingComponent}>
             <div className={cls.container}>
-                <h0 className={cls.header}>Монетизируйте клиентскую базу, не снижая NPS
-                </h0>
+                <h1 className={cls.header}>Монетизируйте клиентскую базу, не снижая NPS
+                </h1>
                 <h2 className={cls.subhead}>
                     Найдите идеальный баланс выручки и удовлетворённости пользователей с платформой рекламной
                     монетизации

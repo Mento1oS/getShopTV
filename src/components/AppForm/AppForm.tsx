@@ -1,21 +1,23 @@
 "use client"
 import cls from './AppForm.module.scss'
 import Link from "next/link";
-import {useState} from "react";
+import {MouseEventHandler, useState} from "react";
 import {Checkbox} from "@mui/material";
 
 interface AppFormProps {
     className?: string;
 }
 
-export const AppForm = ({}: AppFormProps) => {
+export const AppForm = ({className}: AppFormProps) => {
     const [isError, setIsError] = useState(false);
     const [isAgree, setIsAgree] = useState(false);
     const [email, setEmail] = useState('');
     const [question, setQuestion] = useState('');
-    const handleSubmit = (e) => {
+    const handleSubmit: MouseEventHandler<HTMLButtonElement> = (e) => {
         e.preventDefault();
-        if (!email.toLowerCase().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+        if (!email
+            .toLowerCase()
+            .match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
             setIsError(true);
         } else {
             setIsError(false);
@@ -46,8 +48,8 @@ export const AppForm = ({}: AppFormProps) => {
                             bgColor: 'none',
                             color: 'rgb(164, 173, 172)',
                             borderRadius: '4px',
-                            width:'14px',
-                            height:'14px',
+                            width: '14px',
+                            height: '14px',
                             '&.Mui-checked': {
                                 color: 'rgb(255, 89, 0)',
                                 bgColor: 'rgb(255, 255, 255)',
