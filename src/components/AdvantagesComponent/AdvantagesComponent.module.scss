@@ -53,6 +53,9 @@
 .linker{
   max-width: 560px;
 }
+.mobilePicture{
+  display: none;
+}
 
 @media (max-width: 1160px) {
   .AdvantagesComponent{
@@ -87,5 +90,29 @@
       max-height: 189px;
       max-width: 265px;
     }
+  }
+}
+@media (max-width: 690px) {
+  .desktopPicture{
+    display: none;
+  }
+  .mobilePicture{
+    display: block;
+  }
+  .AdvantagesComponent{
+    padding-top: 42px;
+    padding-bottom: 20px;
+  }
+  .advantages{
+    margin-top: 31px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .advantage{
+    padding: 24px;
+    max-width: 288px;
+  }
+  .advHeader{
+    max-width: 288px;
   }
 }

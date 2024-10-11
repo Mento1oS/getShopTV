@@ -58,3 +58,35 @@
   }
 
 }
+@media (max-width: 690px) {
+  .PartnersComponent{
+    padding-top: 60px;
+    padding-bottom: 82px;
+  }
+  .flex{
+    flex-wrap: wrap;
+  }
+  .header{
+    min-width: 166px;
+    max-width: 180px;
+    margin-bottom: 24px;
+  }
+  .clickWave{
+    width: 138.39px;
+    height: 43px;
+    margin-bottom: 12px;
+  }
+  .zyphronix{
+    order:4;
+    width: 84.64px;
+    height: 58.78px;
+    margin: 0 auto;
+  }
+  .novaSphere{
+    order:3;
+    width: 136.83px;
+    height: 35.18px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

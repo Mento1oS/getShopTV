@@ -9,6 +9,7 @@
 
 .wrapper {
   position: relative;
+  width: 100%;
 }
 
 .container {
@@ -68,7 +69,7 @@
 
 .burger {
   display: none;
-  padding: 11px 11px;
+  padding: 11px 10px;
   border: 2px solid  var(--orange);
   border-radius: 10px;
 }
@@ -138,7 +139,8 @@
   }
 
   .wrapper{
-    min-width: 88px;
+    width: 100%;
+    min-height: 88px;
   }
 
   .container {
@@ -160,5 +162,55 @@
   }
   .nav {
     display: none;
+  }
+}
+
+@media (max-width: 690px) {
+  .burger {
+    padding: 8px 8px;
+    gap: 5px;
+    border: 2px solid  var(--orange);
+    border-radius: 7.27px;
+  }
+
+  .burgerLine {
+    width: 15.65px;
+    border-radius: 0.725px;
+    &.clicked:nth-child(1) {
+      transform: rotate(45deg) translate(4.8px, 4.8px);
+    }
+    &.clicked:nth-child(2) {
+      transform: scale(0.1);
+    }
+    &.clicked:nth-child(3) {
+      transform: rotate(-45deg) translate(4.8px,-4.8px);
+    }
+
+  }
+
+
+  .container {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    min-height: 65px;
+  }
+
+  .flex {
+    padding: 18px 0 14px 0;
+  }
+
+
+  .logoLink {
+    border-radius: 7.02px;
+    padding: 0.7px 33px;
+    font-size: 15.08px;
+    font-weight: 900;
+    line-height: 25.85px;
+    letter-spacing: 0.54px;
+  }
+
+  .menu {
+    width: 100%;
   }
 }

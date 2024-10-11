@@ -26,8 +26,10 @@ export const Header = ({className}: HeaderProps) => {
 
     useEffect(() => {
         const isElementVisible = () => {
-            const reviewsComponent = document.getElementById('reviews').getBoundingClientRect();
-            const advantagesComponent = document.getElementById('advantages').getBoundingClientRect();
+            // @ts-ignore: Object is possibly 'null'.
+            const reviewsComponent = document.getElementById('reviews').getBoundingClientRect()!;
+            // @ts-ignore: Object is possibly 'null'.
+            const advantagesComponent = document.getElementById('advantages').getBoundingClientRect()!;
             if (advantagesComponent.top <= ((window.innerHeight || document.documentElement.clientHeight) - 200) &&
                 advantagesComponent.bottom >= 200
             ) {

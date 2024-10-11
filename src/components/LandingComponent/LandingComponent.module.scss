@@ -111,3 +111,31 @@
   }
 }
 
+@media (max-width: 690px) {
+  .LandingComponent {
+    margin-top: 0;
+    background: url("../../assets/shapes.png") center center no-repeat;
+    padding-bottom: 38px;
+  }
+  .container {
+    padding-top: 113px;
+  }
+  .subhead {
+    text-align: left;
+    max-width: 360px;
+  }
+  .button {
+    margin-top: 112px;
+  }
+  .additional {
+    margin-top: 80px;
+    flex-direction: column;
+    gap: 22px
+  }
+  .additionalHeader {
+    max-width: 288px;
+  }
+  .switch {
+    max-width: 288px;
+  }
+}

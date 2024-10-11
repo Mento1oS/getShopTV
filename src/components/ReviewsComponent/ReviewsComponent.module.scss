@@ -96,9 +96,42 @@
     margin-bottom: 32px;
   }
 
+  .picture {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (max-width: 690px) {
+  .ReviewsComponent {
+    padding-top: 24px;
+    background: url("../../assets/notebook_mobile.png") bottom 50px right no-repeat var(--gray-4);
+    padding-bottom: 437px;
+  }
+
+  .wrapper{
+    max-width: var(--container-width);
+  }
+
+  .header {
+    max-width: 225px;
+  }
+
+  .blocks {
+    gap: 19px;
+  }
 
   .picture {
     height: 24px;
     width: 24px;
+  }
+
+  .button{
+    width: 100%;
+    border-radius: 10px;
+    &:hover{
+      background-color: var(--gray-1);
+    }
+    cursor: pointer;
   }
 }
