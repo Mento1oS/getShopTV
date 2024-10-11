@@ -67,3 +67,38 @@
   }
   cursor: pointer;
 }
+
+@media (max-width: 1160px) {
+  .ReviewsComponent {
+    padding-top: 47.3px;
+    background: url("../../assets/notebook_tablet.png") center right no-repeat var(--gray-4);
+    padding-bottom: 70.7px;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: var(--container-width);
+    width: 100%;
+  }
+
+  .wrapper{
+    max-width: 334px;
+  }
+
+  .header {
+    margin-bottom: 32px;
+    max-width: 250px;
+  }
+
+  .blocks {
+    gap: 17px;
+    margin-bottom: 32px;
+  }
+
+
+  .picture {
+    height: 24px;
+    width: 24px;
+  }
+}

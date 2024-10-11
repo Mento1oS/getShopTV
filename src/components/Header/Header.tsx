@@ -11,19 +11,18 @@ interface HeaderProps {
 export const Header = ({className}: HeaderProps) => {
     const [top, setTop] = useState(true);
     const [inViewPort, setInViewport] = useState(0);
-    const [isBurgerOpen, setIsBurgerOpen] = useState(true);
+    const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
     useEffect(() => {
         const scrollHandler = () => {
             window.scrollY > 1 ? setTop(false) : setTop(true);
-            if (Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) > 1160) {
+            if (Math.max(window.innerWidth) > 1171) {
                 setIsBurgerOpen(false);
             }
         };
         window.addEventListener('scroll', scrollHandler);
         return () => window.removeEventListener('scroll', scrollHandler);
     }, [top]);
-
 
     useEffect(() => {
         const isElementVisible = () => {
@@ -51,7 +50,7 @@ export const Header = ({className}: HeaderProps) => {
     }
 
     return (
-        <div className={cls.Header}>
+        <div className={`${cls.Header} ${isBurgerOpen? cls.fullScreen:''}`}>
             <div className={cls.wrapper}>
                 <div className={`${cls.container} ${!top && !isBurgerOpen ? cls.dropShadow : ''}`}>
                     <div className={cls.flex}>

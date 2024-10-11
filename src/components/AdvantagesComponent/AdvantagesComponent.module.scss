@@ -53,3 +53,39 @@
 .linker{
   max-width: 560px;
 }
+
+@media (max-width: 1160px) {
+  .AdvantagesComponent{
+    padding-top: 80px;
+    padding-bottom: 74px;
+  }
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .advantages{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .advantage{
+    padding: 24px;
+    max-width: 300px;
+  }
+
+  .picture{
+    height: 24px;
+    width: 24px;
+    margin-bottom: 19px;
+  }
+
+  .advHeader{
+    max-width: 123px;
+  }
+  .linker{
+    svg{
+      max-height: 189px;
+      max-width: 265px;
+    }
+  }
+}

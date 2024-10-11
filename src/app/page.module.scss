@@ -1,7 +1,13 @@
-.container{
+.container {
   position: relative;
   width: 100%;
   margin: 0 auto;
   color: var(--black);
   padding-top: 31px;
+}
+
+@media (max-width: 1160px) {
+  .container {
+    padding-top: 0px;
+  }
 }

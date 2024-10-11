@@ -27,3 +27,34 @@
 .novaSphere{
   padding-right: 46px;
 }
+
+
+@media (max-width: 1160px) {
+  .PartnersComponent{
+    padding-top: 46px;
+    padding-bottom: 73px;
+  }
+  .flex{
+    display: flex;
+    padding-left: 0;
+    padding-right:0;
+  }
+  .header{
+    min-width: 0;
+    max-width: 140px;
+  }
+  .clickWave{
+    width: 121.31px;
+    height: 37.7px;
+  }
+  .zyphronix{
+    width: 69.85px;
+    height: 48.51px;
+  }
+  .novaSphere{
+    width: 119.94px;
+    height: 30.84px;
+    padding-right: 18px;
+  }
+
+}
