@@ -79,7 +79,7 @@ export const Header = ({className}: HeaderProps) => {
                     </div>
                 </div>
                 {isBurgerOpen ? <div className={cls.menu}>
-                    <Menu inViewPort={inViewPort}/>
+                    <Menu inViewPort={inViewPort} setIsBurgerOpen={setIsBurgerOpen}/>
                 </div> : ''}
             </div>
         </div>
